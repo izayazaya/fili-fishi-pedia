@@ -4,10 +4,13 @@ body {
 
 h1 {
   text-align: center;
+  font-size: 75px;
+  line-height: 0px;
 }
 
 h2 {
   text-align: center;
+  font-size: 25px;
 }
 
 em {
@@ -21,19 +24,31 @@ p {
 
 .container {
   display: inline-flex;
-  margin: 0 0 0px 100px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .image {
   margin: 0 0 15px 15px;
+  justify-content: center;
 }
 
 .caption {
   text-align: center;
+  line-height: 0px;
 }
 
 .header {
   text-align: center;
+  display: flex;
+  margin-left: 25%;
+  margin-right: 25%;
+  justify-content: space-between;
 }
 
 .headerthree {
@@ -58,4 +73,5 @@ p {
 
 .footer {
   display: block;
+  text-align: center;
 }
