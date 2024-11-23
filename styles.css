@@ -17,12 +17,27 @@ em {
 p {
   font-family: monospace;
   font-size: 14px;
-  text-align: center;
-  display: inline;
 }
 
 .container {
-  display: inline;
+  display: inline-flex;
+  margin: 0 0 0px 100px;
+}
+
+.image {
+  margin: 0 0 15px 15px;
+}
+
+.caption {
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+}
+
+.headerthree {
+  text-align: center;
 }
 
 .fishname {
@@ -30,11 +45,10 @@ p {
 }
 
 .fishsprite {
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
   image-rendering: pixelated;
   object-fit: cover;
-  justify-content: center;
 }
 
 .jump {
