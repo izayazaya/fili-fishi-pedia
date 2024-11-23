@@ -40,7 +40,7 @@ p {
 
 .caption {
   text-align: center;
-  line-height: 15px;
+  margin: auto;
 }
 
 .header {
