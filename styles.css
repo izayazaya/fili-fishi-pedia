@@ -6,6 +6,7 @@ h1 {
   text-align: center;
   font-size: 75px;
   margin: auto;
+  font-family: Simplifica;
 }
 
 h2 {
@@ -34,29 +35,20 @@ p {
 }
 
 .image {
-  margin: 0 0 15px 15px;
+  margin-left: 10px;
+  margin-right: 10px;
   justify-content: center;
 }
 
-.caption {
-  text-align: center;
-  margin: auto;
-}
-
 .header {
-  text-align: center;
   display: flex;
   margin-left: 25%;
   margin-right: 25%;
   justify-content: space-between;
 }
 
-.headerthree {
+.headerthree, .header, .caption, .jump, .footer{
   text-align: center;
-}
-
-.fishname {
-  font-weight: normal;
 }
 
 .fishsprite {
@@ -66,12 +58,6 @@ p {
   object-fit: cover;
 }
 
-.jump {
+.jump, .footer {
   display: block;
-  text-align: center;
-}
-
-.footer {
-  display: block;
-  text-align: center;
 }
