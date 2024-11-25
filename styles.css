@@ -1,7 +1,13 @@
+@font-face {
+  font-family: "Bebas Neue";
+  src: url(/font/bebas_neue/BebasNeue-Regular.ttf);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: monospace;
 }
 
 body {
@@ -10,9 +16,10 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 75px;
+  font-size: 90px;
   margin: 10px;
-  font-family: Simplifica;
+  font-family: "Bebas Neue";
+  letter-spacing: 3px;
 }
 
 h2 {
@@ -34,10 +41,10 @@ figure {
 
 figcaption,
 p {
-  font-family: monospace;
   font-size: 14px;
   text-align: center;
-  margin: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .box {
