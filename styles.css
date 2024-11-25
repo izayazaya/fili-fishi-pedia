@@ -11,15 +11,16 @@
 }
 
 body {
-  background-color: burlywood;
+  background-color: #add8e6;
 }
 
 h1 {
   text-align: center;
   font-size: 90px;
-  margin: 10px;
+  margin-top: 15px;
   font-family: "Bebas Neue";
   letter-spacing: 3px;
+  line-height: 90px;
 }
 
 h2 {
@@ -48,17 +49,22 @@ p {
 }
 
 .box {
-  border: 5px;
+  border-style: solid;
+  border-width: 5px;
   border-color: black;
+  border-radius: 50px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 15px;
 }
 
 .container {
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 80%;
+  width: 100%;
   justify-content: center;
   align-items: flex-start;
 }
