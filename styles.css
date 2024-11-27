@@ -27,7 +27,7 @@ h1 {
   margin-top: 15px;
   letter-spacing: -6px;
   line-height: 90px;
-  text-shadow: 5px 5px 0 #51eefc;
+  text-shadow: 5px 5px 0 #303030;
 }
 
 h2 {
@@ -35,7 +35,11 @@ h2 {
   font-size: 30px;
   margin: 10px;
   letter-spacing: -1px;
-  text-shadow: 3px 3px 0 #51eefc;
+  text-shadow: 3px 3px 0 #303030;
+}
+
+.header-three {
+  text-shadow: 1.5px 1.5px 0 #303030;
 }
 
 em {
@@ -57,19 +61,23 @@ p {
   margin-bottom: 5px;
 }
 
-/* Pokemon type style textboxes
+/* Pokemon type style textboxes */
 
 figcaption {
-  text-shadow: 1px 1px 0 #303030;
+  text-shadow: 1px 1px 0 #303030, -1px 1px 0 #303030, -1px -1px 0 #303030, 1px -1px 0 #303030;
   background-color: #6d9ac7;
-  padding: 1px;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
   border-style: solid;
-  border-radius: 10px;
+  border-radius: 15px;
   border-width: 1px;
-  border-color: #303030; 
-} */
+  border-color: #ffffff;
+  outline-color: #303030;
+  outline-width: 2px;
+  outline-style: solid;
+  font-weight: 600;
+}
 
 a:hover {
   color: #51eefc;
@@ -178,7 +186,7 @@ a:hover {
   object-fit: cover;
 }
 
-.headerthree,
+.header-three,
 .jump,
 .footer-text {
   text-align: center;
