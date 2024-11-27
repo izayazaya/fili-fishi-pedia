@@ -149,8 +149,8 @@ p {
 .footer {
   background-color: #303030;
   padding-top: 10px;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-bottom: 10px;
   justify-content: space-between;
   display: flex;
@@ -184,7 +184,7 @@ p {
 }
 .box-two,
 .box-three {
-  width: 30%;
+  width: 40%;
   height: auto;
 }
 
