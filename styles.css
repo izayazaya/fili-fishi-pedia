@@ -1,32 +1,41 @@
-@font-face {
-  font-family: "Bebas Neue";
-  src: url(/font/bebas_neue/BebasNeue-Regular.ttf);
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: monospace;
+  color: #ffffff;
 }
 
-body {
-  background-color: #add8e6;
+body,
+html {
+  background: #0007ad;
+  height: 100vh;
+  padding-top: 20px;
+}
+
+.bg {
+  background: url(img2/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100vw;
+  float: left;
 }
 
 h1 {
   text-align: center;
-  font-size: 90px;
+  font-size: 75px;
   margin-top: 15px;
-  font-family: "Bebas Neue";
-  letter-spacing: 1px;
+  letter-spacing: -6px;
   line-height: 90px;
+  text-shadow: 1px 1px 0 #303030, -1px 1px 0 #303030, -1px -1px 0 #303030, 1px -1px 0 #303030;
 }
 
 h2 {
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
   margin: 10px;
+  letter-spacing: -1px;
+  text-shadow: 1px 1px 0 #303030, -1px 1px 0 #303030, -1px -1px 0 #303030, 1px -1px 0 #303030;
 }
 
 em {
@@ -48,15 +57,37 @@ p {
   margin-bottom: 5px;
 }
 
+/* figcaption {
+  background-color: #6d9ac7;
+  padding: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #303030;
+  text-shadow: 0.5px 0.5px 0 #303030;
+} */
+
 #myHeader.header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  height: 40px;
-  background-color: rgba(10, 200, 200, 0.6);
-  backdrop-filter: blur(2px);
+  height: 50px;
+  width: 100%;
+  background-color: #303030;
   color: white;
   font-size: 14px;
-  display: block;
+  z-index: 1000;
+}
+
+.icon {
+  float: left;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  margin-right: -10px;
+  image-rendering: pixelated;
+  object-fit: cover;
 }
 
 .headercontent {
@@ -64,13 +95,12 @@ p {
 }
 
 .section {
-  display: inline-block;
-  border-color: aquamarine;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 5px;
-  padding: 10px;
-  width: 20%;
+  float: left;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  margin-left: 10px;
+  width: auto;
+  max-width: 15%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -83,6 +113,7 @@ p {
   text-align: center;
   overflow: hidden;
   width: 20%;
+  padding: 5px;
 }
 
 .search {
@@ -94,15 +125,14 @@ p {
 }
 
 .box {
-  border-style: solid;
-  border-width: 5px;
-  border-color: black;
-  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
   margin-left: 15%;
   margin-right: 15%;
   margin-bottom: 40px;
   padding-top: 10px;
   padding-bottom: 15px;
+  backdrop-filter: blur(3px);
 }
 
 .container {
@@ -114,12 +144,36 @@ p {
   align-items: flex-start;
 }
 
+.footer {
+  background-color: #303030;
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 120px;
+}
+
+.footer-icon {
+  float: left;
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  image-rendering: pixelated;
+  object-fit: cover;
+  margin-bottom: 100px;
+}
+
 .headerthree,
 .jump,
-.footer {
+.footer-text {
   text-align: center;
   margin: 15px;
   display: block;
+}
+
+.footer-text {
+  text-align: left;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .fishsprite {
