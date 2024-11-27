@@ -9,37 +9,37 @@
 body,
 html {
   background: #0007ad;
-  height: 100vh;
-  padding-top: 20px;
+  height: 100%;
+  padding-top: 1.75rem;
 }
 
 .bg {
   background: url(img2/bg.jpg);
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 100vw;
+  background-size: 100%;
   float: left;
 }
 
 h1 {
   text-align: center;
-  font-size: 60px;
-  margin-top: 15px;
-  letter-spacing: -6px;
-  line-height: 90px;
-  text-shadow: 5px 5px 0 #303030;
+  font-size: 4.5rem;
+  margin-top: 1rem;
+  letter-spacing: -0.375rem;
+  line-height: 7rem;
+  text-shadow: 0.375rem 0.375rem 0 #303030;
 }
 
 h2 {
   text-align: center;
-  font-size: 30px;
-  margin: 10px;
-  letter-spacing: -1px;
-  text-shadow: 3px 3px 0 #303030;
+  font-size: 2rem;
+  margin: 1rem;
+  letter-spacing: -0.125rem;
+  text-shadow: 0.25rem 0.25rem 0 #303030;
 }
 
 .header-three {
-  text-shadow: 1.5px 1.5px 0 #303030;
+  text-shadow: 0.125rem 0.125rem 0 #303030;
 }
 
 em {
@@ -48,35 +48,35 @@ em {
 
 figure {
   display: inline-block;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   text-align: center;
 }
 
 figcaption,
 p {
-  font-size: 14px;
+  font-size: 1rem;
   text-align: center;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 0.375rem;
+  margin-bottom: 0.375rem;
 }
 
 /* Pokemon type style textboxes */
 
 figcaption {
-  text-shadow: 1px 1px 0 #303030, -1px 1px 0 #303030, -1px -1px 0 #303030, 1px -1px 0 #303030;
+  text-shadow: 0.125rem 0.125rem 0 #303030, -0.125rem 0.125rem 0 #303030, -0.125rem -0.125rem 0 #303030, 0.125rem -0.125rem 0 #303030;
   background-color: #6d9ac7;
-  padding: 2px;
-  padding-left: 4px;
-  padding-right: 4px;
+  padding: 0.2rem;
+  padding-left: 0.375rem;
+  padding-right: 0.375rem;
   border-style: solid;
-  border-radius: 15px;
-  border-width: 1px;
+  border-radius: 1rem;
+  border-width: 0.2rem;
   border-color: #ffffff;
   outline-color: #303030;
-  outline-width: 2px;
+  outline-width: 0.2rem;
   outline-style: solid;
-  font-weight: 600;
+  font-weight: 550;
 }
 
 a:hover {
@@ -91,23 +91,28 @@ a:hover {
   background-color: #555555;
 }
 
+.bg .box .container img:hover {
+  filter: brightness(1.25);
+}
+
 #myHeader.header {
   position: fixed;
   top: 0;
-  height: 50px;
+  height: 4rem;
   width: 100%;
   background-color: #303030;
   color: white;
-  font-size: 14px;
+  font-size: 1rem;
   z-index: 1000;
+  white-space: nowrap;
 }
 
 .icon {
   float: left;
-  width: 50px;
-  height: 50px;
-  padding: 10px;
-  margin-right: -5px;
+  width: 4rem;
+  height: 4rem;
+  padding: 0.75rem;
+  margin-right: -0.375rem;
   image-rendering: pixelated;
   object-fit: cover;
 }
@@ -118,10 +123,10 @@ a:hover {
 
 .section {
   float: left;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 1.375rem;
+  padding-bottom: 1.375rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   width: auto;
   max-width: 15%;
   overflow: hidden;
@@ -136,27 +141,27 @@ a:hover {
   text-align: center;
   overflow: hidden;
   width: 20%;
-  padding: 5px;
+  padding: 0.4375rem;
 }
 
 .search {
-  border: 1px;
-  border-radius: 5px;
-  height: 40px;
+  border: 0.125rem;
+  border-radius: 0.375rem;
+  height: 3.0675rem;
   width: 100%;
-  padding: 10px;
+  padding: 0.875rem;
   color: #303030;
 }
 
 .box {
   background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 30px;
+  border-radius: 2rem;
   margin-left: 15%;
   margin-right: 15%;
-  margin-bottom: 40px;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  backdrop-filter: blur(3px);
+  margin-bottom: 3rem;
+  padding-top: 0.875rem;
+  padding-bottom: 1rem;
+  backdrop-filter: blur(0.25rem);
 }
 
 .container {
@@ -170,18 +175,18 @@ a:hover {
 
 .footer {
   background-color: #303030;
-  padding-top: 10px;
+  padding-top: 0.875rem;
   padding-left: 3%;
   padding-right: 3%;
-  padding-bottom: 10px;
+  padding-bottom: 0.875rem;
   justify-content: left;
   display: flex;
 }
 
 .footer-icon {
-  width: 80px;
-  height: 80px;
-  padding: 10px;
+  width: 6rem;
+  height: 6rem;
+  padding: 0.875rem;
   image-rendering: pixelated;
   object-fit: cover;
 }
@@ -190,14 +195,14 @@ a:hover {
 .jump,
 .footer-text {
   text-align: center;
-  margin: 15px;
+  margin: 1rem;
   display: block;
 }
 
 .jump {
   display: table;
   margin: auto;
-  margin-bottom: 15px;
+  margin-bottom: 1.25rem;
 }
 
 .footer-text {
@@ -205,7 +210,7 @@ a:hover {
 }
 
 .box-one {
-  width: 90px;
+  width: 7rem;
   height: auto;
 }
 .box-two,
@@ -217,26 +222,26 @@ a:hover {
 .box-one p,
 .box-two p,
 .box-three p {
-  font-size: 12px;
+  font-size: 0.875rem;
 }
 
 .contact {
   text-align: left;
-  margin-bottom: 5px;
+  margin-bottom: 0.375rem;
   word-wrap: break-word;
   padding-left: 5%;
 }
 
 .contact.title {
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 0.875rem;
 }
 
 .fishsprite {
-  width: 75px;
-  height: 75px;
+  width: 6rem;
+  height: 6rem;
   image-rendering: pixelated;
   object-fit: cover;
 }
