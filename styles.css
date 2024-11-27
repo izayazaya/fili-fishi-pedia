@@ -23,7 +23,7 @@ html {
 
 h1 {
   text-align: center;
-  font-size: 75px;
+  font-size: 60px;
   margin-top: 15px;
   letter-spacing: -6px;
   line-height: 90px;
@@ -57,7 +57,9 @@ p {
   margin-bottom: 5px;
 }
 
-/* figcaption {
+/* Pokemon type style textboxes
+
+  figcaption {
   background-color: #6d9ac7;
   padding: 1px;
   padding-left: 2px;
@@ -98,7 +100,7 @@ p {
   float: left;
   padding-top: 17px;
   padding-bottom: 17px;
-  margin-left: 10px;
+  margin-left: 2%;
   width: auto;
   max-width: 15%;
   overflow: hidden;
