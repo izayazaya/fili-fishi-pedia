@@ -6,10 +6,6 @@
   color: #ffffff;
 }
 
-a {
-  text-decoration: none;
-}
-
 body,
 html {
   background: #0007ad;
@@ -17,12 +13,27 @@ html {
   padding-top: 1.75rem;
 }
 
-.section a:hover {
-  color: #ffffff;
+a {
+  text-decoration: none;
 }
 
-.section:hover {
-  background-color: #555555;
+a:hover {
+  color: #51eefc;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4.5rem;
+  margin-top: 1rem;
+  letter-spacing: -0.375rem;
+  line-height: 7rem;
+  text-shadow: 0.375rem 0.375rem 0 #303030;
+}
+
+h2 {
+  margin-left: 2rem;
+  font-size: 3rem;
+  text-shadow: 0.25rem 0.25rem 0 #303030;
 }
 
 #myHeader.header {
@@ -65,6 +76,14 @@ html {
   text-align: center;
 }
 
+.section a:hover {
+  color: #ffffff;
+}
+
+.section:hover {
+  background-color: #555555;
+}
+
 .navbar {
   float: right;
   text-align: center;
@@ -90,31 +109,21 @@ html {
   float: left;
 }
 
-h1 {
-  text-align: center;
-  font-size: 4.5rem;
-  margin-top: 1rem;
-  letter-spacing: -0.375rem;
-  line-height: 7rem;
-  text-shadow: 0.375rem 0.375rem 0 #303030;
-}
-
-h2 {
-  margin-left: 2rem;
-  font-size: 3rem;
-  text-shadow: 0.25rem 0.25rem 0 #303030;
+.box {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 2rem;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  margin-bottom: 3rem;
+  padding-top: 0.875rem;
+  padding-bottom: 1rem;
+  backdrop-filter: blur(0.25rem);
 }
 
 .desc,
 .data {
   font-size: 1.25rem;
   text-shadow: 0.15rem 0.15rem 0 #303030;
-}
-
-.desc {
-  margin: 1.5rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
 }
 
 .container {
@@ -130,16 +139,6 @@ h2 {
   float: left;
 }
 
-.pic {
-  display: inline-block;
-  border-style: dashed;
-  border-width: 0.2rem;
-  border-color: #ffffff;
-  width: 24rem;
-  height: 16rem;
-  border-radius: 4rem;
-}
-
 #data {
   float: left;
   margin-bottom: 7.5%;
@@ -150,19 +149,24 @@ h2 {
   float: right;
 }
 
+.pic {
+  display: inline-block;
+  border-style: dashed;
+  border-width: 0.2rem;
+  border-color: #ffffff;
+  width: 24rem;
+  height: 16rem;
+  border-radius: 4rem;
+}
+
 #desc {
   display: inline-block;
 }
 
-.box {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 2rem;
-  margin-left: 7.5%;
-  margin-right: 7.5%;
-  margin-bottom: 3rem;
-  padding-top: 0.875rem;
-  padding-bottom: 1rem;
-  backdrop-filter: blur(0.25rem);
+.desc {
+  margin: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .footer {
