@@ -6,6 +6,10 @@
   color: #ffffff;
 }
 
+a {
+  text-decoration: none;
+}
+
 body,
 html {
   background: #0007ad;
@@ -169,6 +173,7 @@ h2 {
   padding-bottom: 0.875rem;
   justify-content: left;
   display: flex;
+  height: 25vh;
 }
 
 .footer-icon {
@@ -224,4 +229,39 @@ h2 {
   font-weight: bold;
   text-align: center;
   margin-bottom: 0.875rem;
+}
+
+@media screen and (max-width: 40em) {
+  html {
+    font-size: 87.5%;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .box {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2rem;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 3rem;
+    padding-top: 0.875rem;
+    padding-bottom: 1rem;
+    backdrop-filter: blur(0.25rem);
+  }
+
+  .pic {
+    display: inline-block;
+    border-style: dashed;
+    border-width: 0.2rem;
+    border-color: #ffffff;
+    width: 22.5rem;
+    height: 15rem;
+    border-radius: 4rem;
+  }
 }
