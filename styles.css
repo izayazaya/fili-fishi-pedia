@@ -6,23 +6,19 @@
   color: #ffffff;
 }
 
-a {
-  text-decoration: none;
-}
-
-body,
-html {
+html,
+body {
   background: #0007ad;
   height: 100%;
   padding-top: 1.75rem;
 }
 
-.bg {
-  background: url(img2/bg.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 100%;
-  float: left;
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #51eefc;
 }
 
 h1 {
@@ -40,14 +36,6 @@ h2 {
   margin: 1rem;
   letter-spacing: -0.125rem;
   text-shadow: 0.25rem 0.25rem 0 #303030;
-}
-
-.header-three {
-  text-shadow: 0.125rem 0.125rem 0 #303030;
-}
-
-em {
-  font-style: normal;
 }
 
 figure {
@@ -83,17 +71,16 @@ figcaption {
   font-weight: 550;
 }
 
-a:hover {
-  color: #51eefc;
+em {
+  font-style: normal;
 }
 
-.section a:hover {
-  color: #ffffff;
-}
-
-.section:hover {
-  background-color: #555555;
-  transition-duration: 0.125s;
+.bg {
+  background: url(img2/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+  float: left;
 }
 
 .bg .box .container img:hover {
@@ -127,6 +114,10 @@ a:hover {
   width: 100%;
 }
 
+.header-three {
+  text-shadow: 0.125rem 0.125rem 0 #303030;
+}
+
 .section {
   float: left;
   padding-top: 1.375rem;
@@ -140,6 +131,15 @@ a:hover {
   white-space: nowrap;
   float: left;
   text-align: center;
+}
+
+.section a:hover {
+  color: #ffffff;
+}
+
+.section:hover {
+  background-color: #555555;
+  transition-duration: 0.125s;
 }
 
 .navbar {
@@ -199,7 +199,6 @@ a:hover {
 }
 
 .header-three,
-.jump,
 .footer-text {
   text-align: center;
   margin: 1rem;
