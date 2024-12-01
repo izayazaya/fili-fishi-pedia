@@ -39,10 +39,11 @@ h2 {
 }
 
 figure {
-  display: inline-block;
+  flex: auto;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   text-align: center;
+  max-width: 8rem;
 }
 
 figcaption,
@@ -172,12 +173,14 @@ em {
   margin-bottom: 3rem;
   padding-top: 0.875rem;
   padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   box-shadow: 0.125rem 0.125rem 0.75rem #303030;
   backdrop-filter: blur(0.25rem);
 }
 
 .container {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
