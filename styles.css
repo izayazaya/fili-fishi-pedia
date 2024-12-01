@@ -57,7 +57,7 @@ p {
 
 figcaption {
   text-shadow: 0.05rem 0.05rem 0 #303030, -0.05rem 0.05rem 0 #303030, -0.05rem -0.05rem 0 #303030, 0.05rem -0.05rem 0 #303030;
-  background-color: #6d9ac7;
+  background-color: #303030;
   padding: 0.2rem;
   padding-left: 0.375rem;
   padding-right: 0.375rem;
@@ -83,9 +83,14 @@ em {
   float: left;
 }
 
+.bg .box .container img {
+  filter: grayscale(100%);
+}
+
 .bg .box .container img:hover {
-  filter: brightness(1.25);
+  filter: brightness(1.1);
   transition-duration: 0.125s;
+  scale: 1.1;
 }
 
 #myHeader.header {
@@ -167,6 +172,7 @@ em {
   margin-bottom: 3rem;
   padding-top: 0.875rem;
   padding-bottom: 1rem;
+  box-shadow: 0.125rem 0.125rem 0.75rem #303030;
   backdrop-filter: blur(0.25rem);
 }
 
@@ -187,7 +193,7 @@ em {
   padding-bottom: 0.875rem;
   justify-content: left;
   display: flex;
-  height: 25vh;
+  height: 14rem;
 }
 
 .footer-icon {
