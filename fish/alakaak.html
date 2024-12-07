@@ -6,6 +6,7 @@
     <meta name="keywords" content="HTML, CSS, Fish, Fishes, Shellfish, Marine, Wikipedia, Philippines, Filipino" />
     <link rel="stylesheet" href="styles.css" />
     <title>Alakaak</title>
+    <script src="https://kit.fontawesome.com/af590c196f.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="myHeader" class="header">
@@ -14,8 +15,12 @@
       <div class="header-content">
         <div class="section"><a href="..">Home</a></div>
       </div>
-      <div class="navbar">
-        <input class="search" type="text" placeholder="Search..." name="search" autocomplete="off" />
+      <div class="search-bar">
+        <div class="navbar">
+          <input class="search" type="text" placeholder="Search..." name="search" autocomplete="off" />
+          <button id="submit-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="result-box"></div>
       </div>
     </div>
     <div class="bg">
@@ -64,5 +69,6 @@
         </p>
       </div>
     </div>
+    <script src="autocomplete.js"></script>
   </body>
 </html>

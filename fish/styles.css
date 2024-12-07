@@ -45,6 +45,7 @@ h2 {
   color: white;
   font-size: 1rem;
   z-index: 1000;
+  white-space: nowrap;
 }
 
 .icon {
@@ -52,7 +53,7 @@ h2 {
   width: 4rem;
   height: 4rem;
   padding: 0.75rem;
-  margin-right: -0.375px;
+  margin-right: -0.375rem;
   image-rendering: pixelated;
   object-fit: cover;
 }
@@ -82,23 +83,90 @@ h2 {
 
 .section:hover {
   background-color: #555555;
+  transition-duration: 0.125s;
+}
+
+.search-bar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
 }
 
 .navbar {
-  float: right;
-  text-align: center;
+  border: 0.125rem;
+  border-radius: 0.375rem;
+  width: 50%;
   overflow: hidden;
-  width: 20%;
-  padding: 0.4375rem;
+  height: 3.0675rem;
+  margin: 0.4375rem 0.4375rem 0 0.4375rem;
+  position: relative;
+  margin-left: auto;
+  background-color: #ffffff;
 }
 
 .search {
-  border: 0.125rem;
+  border: none;
   border-radius: 0.375rem;
   height: 3.0675rem;
-  width: 100%;
+  width: 90%;
   padding: 0.875rem;
   color: #303030;
+}
+
+.search:focus {
+  border: none;
+  outline: none;
+}
+
+#submit-button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border: 0;
+  outline: 0;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+#submit-button .fa-solid {
+  width: 2rem;
+  color: #303030;
+  font-size: 1.5rem;
+}
+
+.result-box ul {
+  border-top-width: 0.125rem;
+  border-top-style: solid;
+  border-top-color: #303030;
+  padding: 0.4375rem;
+  text-align: left;
+}
+
+.result-box ul li {
+  list-style: none;
+  border-radius: 0.25rem;
+  padding: 0.875rem 0.4375rem;
+  cursor: pointer;
+  color: #303030;
+}
+
+.result-box ul li:hover {
+  background-color: #51eefc;
+}
+
+.result-box {
+  flex: 1;
+  max-height: 20rem;
+  overflow-y: scroll;
+  background-color: #ffffff;
+  border-radius: 0.375rem;
+  margin: 0 0.4375rem;
+  width: 50%;
+  margin-left: auto;
 }
 
 .bg {
@@ -112,11 +180,13 @@ h2 {
 .box {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 2rem;
-  margin-left: 7.5%;
-  margin-right: 7.5%;
+  margin-left: 15%;
+  margin-right: 15%;
   margin-bottom: 3rem;
   padding-top: 0.875rem;
   padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   box-shadow: 0.125rem 0.125rem 0.75rem #303030;
   backdrop-filter: blur(0.25rem);
 }
@@ -269,5 +339,10 @@ h2 {
     width: 22.5rem;
     height: 15rem;
     border-radius: 4rem;
+  }
+
+  .navbar,
+  .result-box {
+    width: 80%;
   }
 }
