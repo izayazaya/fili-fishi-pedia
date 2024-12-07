@@ -481,10 +481,6 @@ submitButton.addEventListener("click", () => {
       window.location.href = url;
       break;
     case "sapsap":
-      url = "./fish/samaral.html";
-      window.location.href = url;
-      break;
-    case "sapsap":
       url = "./fish/sapsap.html";
       window.location.href = url;
       break;
