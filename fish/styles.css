@@ -158,6 +158,10 @@ h2 {
   background-color: #51eefc;
 }
 
+.result-box li.highlight {
+  background-color: #51eefc;
+}
+
 .result-box {
   flex: 1;
   max-height: 20rem;

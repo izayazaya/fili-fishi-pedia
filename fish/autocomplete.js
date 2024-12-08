@@ -107,41 +107,77 @@ let availableKeywords = [
 
 const resultsBox = document.querySelector(".result-box");
 const inputBox = document.querySelector(".search");
+let currentFocus = -1;
 
-inputBox.onkeyup = function () {
-  let result = [];
+inputBox.addEventListener("input", function () {
   let input = inputBox.value;
+  let result = [];
   if (input.length) {
-    result = availableKeywords.filter((keyword) => {
-      return keyword.toLowerCase().includes(input.toLowerCase());
-    });
-    console.log(result);
+    result = availableKeywords.filter((keyword) => keyword.toLowerCase().includes(input.toLowerCase()));
   }
   display(result);
 
   if (!result.length) {
     resultsBox.innerHTML = "";
   }
-};
+});
 
 function display(result) {
-  const content = result.map((list) => {
-    return "<li onclick=selectInput(this)>" + list + "</li>";
-  });
+  const content = result.map((list) => `<li tabindex="0" onclick="selectInput(this)">${list}</li>`);
 
-  resultsBox.innerHTML = "<ul>" + content.join("") + "</ul>";
+  resultsBox.innerHTML = `<ul>${content.join("")}</ul>`;
+  currentFocus = -1;
 }
 
 function selectInput(list) {
   inputBox.value = list.innerHTML;
   resultsBox.innerHTML = "";
+  inputBox.focus();
 }
 
-const inputField = document.querySelector(".search");
 const submitButton = document.getElementById("submit-button");
 
+inputBox.addEventListener("keydown", function (e) {
+  const items = resultsBox.querySelectorAll("li");
+
+  if (e.key === "ArrowDown") {
+    currentFocus++;
+    highlight(items);
+  } else if (e.key === "ArrowUp") {
+    currentFocus--;
+    highlight(items);
+  } else if (e.key === "Enter") {
+    e.preventDefault();
+    if (currentFocus > -1 && items[currentFocus]) {
+      items[currentFocus].click();
+    }
+    submitButton.click();
+  }
+});
+
+function highlight(items) {
+  removeHighlight(items);
+
+  if (currentFocus >= items.length) {
+    currentFocus = 0;
+  }
+  if (currentFocus < 0) {
+    currentFocus = items.length - 1;
+  }
+  if (items[currentFocus]) {
+    items[currentFocus].classList.add("highlight");
+    items[currentFocus].scrollIntoView({ block: "nearest" });
+  }
+}
+
+function removeHighlight(items) {
+  items.forEach((item) => {
+    item.classList.remove("highlight");
+  });
+}
+
 submitButton.addEventListener("click", () => {
-  const inputValue = inputField.value;
+  const inputValue = inputBox.value;
 
   switch (inputValue.toLowerCase()) {
     case "agoot":
