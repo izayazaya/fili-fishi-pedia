@@ -3,12 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agoot</title>
+    <meta name="keywords" content="HTML, CSS, Fish, Fishes, Shellfish, Marine, Wikipedia, Philippines, Filipino" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Hasa-hasa</title>
+    <script src="https://kit.fontawesome.com/af590c196f.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <a href="./../img2/agoot.jpg" download
-      ><img src="./../img2/agoot.jpg" alt="Agoot or Grunt"
-    /></a>
-    <a href="./../index.html">Home Page</a>
+    <div id="myHeader" class="header">
+      <img class="icon" src="../img2/blobfish.png" alt="A pixel art blobfish" />
+      <!-- The anchor elements here are used to redirect to different parts of the webpage -->
+      <div class="header-content">
+        <div class="section"><a href="..">Home</a></div>
+      </div>
+      <div class="search-bar">
+        <div class="navbar">
+          <input class="search" type="text" placeholder="Search..." name="search" autocomplete="off" />
+          <button id="submit-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="result-box"></div>
+      </div>
+    </div>
+    <div class="bg">
+      <h1>FILI-FISHI-PEDIA</h1>
+      <div class="box">
+        <h2 class="name">Hasa-hasa</h2>
+        <div class="container">
+          <div id="data">
+            <p class="data">Common Name: Hasa-hasa</p>
+            <p class="data">Scientific Name: <em>Johnius macrorhynus</em></p>
+            <p class="data">Size: 30 cm - 50 cm</p>
+            <p class="data">Weight: 0.3 kg - 1 kg</p>
+            <p class="data">Season: Year-round peaking in March - May</p>
+            <p class="data">Market Price(kg): PHP 700 - 750</p>
+          </div>
+          <div id="img"><img class="pic" src="../img2/hasa-hasa.jpg" alt="Hasa-hasa" /></div>
+        </div>
+        <div id="desc">
+          <p class="desc">
+            Hasa-hasa is commonly found in the shallow coastal waters of the Philippines, including estuaries, muddy bottoms, and coral reefs. It is abundant in regions like the Visayan Sea, Sulu Sea, and near the coasts of Luzon, Mindanao, and
+            Palawan.
+          </p>
+          <p class="desc">
+            Hasa-hasa (Johnius spp.) is a commercially important fish in the Philippines, recognized for its tender, white flesh and mildly sweet flavor. It is widely caught using nets or traps and is typically sold fresh in local markets. Hasa-hasa
+            is highly valued for its versatility in cooking, often grilled, fried, or used in stews and soups like sinigang. The fish is affordable and easy to prepare, making it a popular choice for home cooks and restaurants alike. Its availability
+            year-round, combined with its relatively low cost, makes it a staple in Filipino households, particularly in coastal communities. Additionally, Hasa-hasa supports local fisheries, contributing to the livelihoods of many small-scale
+            fishermen.
+          </p>
+        </div>
+      </div>
+      <a class="jump" href="#">Jump to Top</a>
+    </div>
+    <div class="footer">
+      <div class="box-one">
+        <img class="footer-icon" src="../img2/blobfish.png" alt="A pixel art blobfish" />
+      </div>
+      <div class="box-two">
+        <p class="contact title">CONTACT US</p>
+        <p class="contact">isaiahmoureenmagallanes.balin22@deped-u.edu.ph</p>
+        <p class="contact">justinmiguelpalencia.osabal24@deped-u.edu.ph</p>
+        <p class="contact">johnbenedictbalbin.balilo24@deped-u.edu.ph</p>
+      </div>
+      <div class="box-three">
+        <p class="footer-text">This is a list for the most common fish served as food.</p>
+        <p class="footer-text">
+          Information from this
+          <a href="https://philfoodie.blogspot.com/2011/05/philippine-fish.html" target="_blank" rel="noopener noreferrer">lovely blog</a>
+          about fish.
+        </p>
+      </div>
+    </div>
+    <script src="autocomplete.js"></script>
   </body>
 </html>

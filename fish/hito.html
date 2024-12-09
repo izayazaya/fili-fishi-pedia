@@ -3,12 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agoot</title>
+    <meta name="keywords" content="HTML, CSS, Fish, Fishes, Shellfish, Marine, Wikipedia, Philippines, Filipino" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Hito</title>
+    <script src="https://kit.fontawesome.com/af590c196f.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <a href="./../img2/agoot.jpg" download
-      ><img src="./../img2/agoot.jpg" alt="Agoot or Grunt"
-    /></a>
-    <a href="./../index.html">Home Page</a>
+    <div id="myHeader" class="header">
+      <img class="icon" src="../img2/blobfish.png" alt="A pixel art blobfish" />
+      <!-- The anchor elements here are used to redirect to different parts of the webpage -->
+      <div class="header-content">
+        <div class="section"><a href="..">Home</a></div>
+      </div>
+      <div class="search-bar">
+        <div class="navbar">
+          <input class="search" type="text" placeholder="Search..." name="search" autocomplete="off" />
+          <button id="submit-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="result-box"></div>
+      </div>
+    </div>
+    <div class="bg">
+      <h1>FILI-FISHI-PEDIA</h1>
+      <div class="box">
+        <h2 class="name">Hito</h2>
+        <div class="container">
+          <div id="data">
+            <p class="data">Common Name: Hito</p>
+            <p class="data">Scientific Name: <em>Clarias batrachus</em></p>
+            <p class="data">Size: 30 cm - 60 cm</p>
+            <p class="data">Weight: 0.5 kg - 2 kg</p>
+            <p class="data">Season: Year-round peaking in June - September</p>
+            <p class="data">Market Price(kg): PHP 700 - 750</p>
+          </div>
+          <div id="img"><img class="pic" src="../img2/hito.jpg" alt="Hito" /></div>
+        </div>
+        <div id="desc">
+          <p class="desc">
+            Hito is commonly found in freshwater habitats throughout the Philippines, particularly in rivers, ponds, and lakes. It is widely distributed across the country, including regions like Luzon, Visayas, and Mindanao. Hito thrives in
+            slow-moving waters, mud-bottomed areas, and sometimes in brackish waters near coastal regions.
+          </p>
+          <p class="desc">
+            Hito (Clarias batrachus) is a commercially important fish in the Philippines, known for its soft, white flesh and versatility in cooking. It is often farmed in freshwater fishponds and raised in controlled environments, making it a
+            sustainable source of protein. Hito is popular in Filipino cuisine, where it is commonly used in dishes such as sinigang na hito (catfish in sour soup), crispy hito, or grilled preparations. The fish is prized for its affordability and
+            mild flavor, making it a staple in many households, particularly in rural areas. It is typically sold fresh in local markets but can also be found in processed forms such as dried or smoked catfish. Due to its wide availability and low
+            cost, Hito plays a significant role in both local markets and small-scale aquaculture, supporting the livelihoods of Filipino fish farmers.
+          </p>
+        </div>
+      </div>
+      <a class="jump" href="#">Jump to Top</a>
+    </div>
+    <div class="footer">
+      <div class="box-one">
+        <img class="footer-icon" src="../img2/blobfish.png" alt="A pixel art blobfish" />
+      </div>
+      <div class="box-two">
+        <p class="contact title">CONTACT US</p>
+        <p class="contact">isaiahmoureenmagallanes.balin22@deped-u.edu.ph</p>
+        <p class="contact">justinmiguelpalencia.osabal24@deped-u.edu.ph</p>
+        <p class="contact">johnbenedictbalbin.balilo24@deped-u.edu.ph</p>
+      </div>
+      <div class="box-three">
+        <p class="footer-text">This is a list for the most common fish served as food.</p>
+        <p class="footer-text">
+          Information from this
+          <a href="https://philfoodie.blogspot.com/2011/05/philippine-fish.html" target="_blank" rel="noopener noreferrer">lovely blog</a>
+          about fish.
+        </p>
+      </div>
+    </div>
+    <script src="autocomplete.js"></script>
   </body>
 </html>
