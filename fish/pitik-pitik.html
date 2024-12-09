@@ -3,12 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agoot</title>
+    <meta name="keywords" content="HTML, CSS, Fish, Fishes, Shellfish, Marine, Wikipedia, Philippines, Filipino" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pitik-pitik</title>
+    <script src="https://kit.fontawesome.com/af590c196f.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <a href="./../img2/agoot.jpg" download
-      ><img src="./../img2/agoot.jpg" alt="Agoot or Grunt"
-    /></a>
-    <a href="./../index.html">Home Page</a>
+    <div id="myHeader" class="header">
+      <img class="icon" src="../img2/blobfish.png" alt="A pixel art blobfish" />
+      <!-- The anchor elements here are used to redirect to different parts of the webpage -->
+      <div class="header-content">
+        <div class="section"><a href="..">Home</a></div>
+      </div>
+      <div class="search-bar">
+        <div class="navbar">
+          <input class="search" type="text" placeholder="Search..." name="search" autocomplete="off" />
+          <button id="submit-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="result-box"></div>
+      </div>
+    </div>
+    <div class="bg">
+      <h1>FILI-FISHI-PEDIA</h1>
+      <div class="box">
+        <h2 class="name">Pitik-pitik</h2>
+        <p class="desc">The pitik-pitik, also known as the "small shrimp" or "mantis shrimp," is a marine species found in the Philippines. It's a member of the stomatopod group, famous for its distinctive claws and vibrant coloration.</p>
+        <div class="container">
+          <div id="data">
+            <p class="data">Common Name: Pitik-pitik</p>
+            <p class="data">Scientific Name: <em>Toxotes jaculatrix</em></p>
+            <p class="data">Size: 10 cm - 20 cm</p>
+            <p class="data">Weight: 0.1 kgs - 0.5 kgs</p>
+            <p class="data">Season: Year-round peaking in May to October</p>
+            <p class="data">Market Price(kg): PHP 100 - 200</p>
+          </div>
+          <div id="img"><img class="pic" src="../img2/pitik-pitik.jpg" alt="Pitik-pitik" /></div>
+        </div>
+        <div id="desc">
+          <p class="desc">Pitik-pitik can be found in shallow coastal waters, particularly in sandy and rocky areas, coral reefs, and mud flats along the Philippines' coastline.</p>
+          <p class="desc">
+            The pitik-pitik is prized for its firm texture and unique flavor, making it a popular delicacy in local Filipino cuisine, especially in coastal regions. Its meat is often used in various dishes, including soups, stews, and stir-fries.
+            Commercially, the fish is harvested using traditional fishing methods and is sold both fresh and frozen in local markets. Due to its relatively small size and strong claws, it requires skilled handling, often creating a niche market for
+            those who specialize in harvesting and preparing the fish. Pitik-pitik is not only a culinary favorite but also a part of the local economy, supporting coastal communities with a sustainable source of income.
+          </p>
+        </div>
+      </div>
+      <a class="jump" href="#">Jump to Top</a>
+    </div>
+    <div class="footer">
+      <div class="box-one">
+        <img class="footer-icon" src="../img2/blobfish.png" alt="A pixel art blobfish" />
+      </div>
+      <div class="box-two">
+        <p class="contact title">CONTACT US</p>
+        <p class="contact">isaiahmoureenmagallanes.balin22@deped-u.edu.ph</p>
+        <p class="contact">justinmiguelpalencia.osabal24@deped-u.edu.ph</p>
+        <p class="contact">johnbenedictbalbin.balilo24@deped-u.edu.ph</p>
+      </div>
+      <div class="box-three">
+        <p class="footer-text">This is a list for the most common fish served as food.</p>
+        <p class="footer-text">
+          Information from this
+          <a href="https://philfoodie.blogspot.com/2011/05/philippine-fish.html" target="_blank" rel="noopener noreferrer">lovely blog</a>
+          about fish.
+        </p>
+      </div>
+    </div>
+    <script src="autocomplete.js"></script>
   </body>
 </html>

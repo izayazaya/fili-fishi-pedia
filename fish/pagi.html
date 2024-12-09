@@ -3,12 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agoot</title>
+    <meta name="keywords" content="HTML, CSS, Fish, Fishes, Shellfish, Marine, Wikipedia, Philippines, Filipino" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pagi</title>
+    <script src="https://kit.fontawesome.com/af590c196f.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <a href="./../img2/agoot.jpg" download
-      ><img src="./../img2/agoot.jpg" alt="Agoot or Grunt"
-    /></a>
-    <a href="./../index.html">Home Page</a>
+    <div id="myHeader" class="header">
+      <img class="icon" src="../img2/blobfish.png" alt="A pixel art blobfish" />
+      <!-- The anchor elements here are used to redirect to different parts of the webpage -->
+      <div class="header-content">
+        <div class="section"><a href="..">Home</a></div>
+      </div>
+      <div class="search-bar">
+        <div class="navbar">
+          <input class="search" type="text" placeholder="Search..." name="search" autocomplete="off" />
+          <button id="submit-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="result-box"></div>
+      </div>
+    </div>
+    <div class="bg">
+      <h1>FILI-FISHI-PEDIA</h1>
+      <div class="box">
+        <h2 class="name">Pagi</h2>
+        <p class="desc">
+          The Pagi is a common name for a type of stingray found in the waters of the Philippines. It is a marine species that inhabits shallow coastal areas and estuaries. These fish are known for their wide, flat bodies and long, whip-like tails,
+          which often contain venomous spines. Pagi are typically found in the muddy or sandy bottoms of bays and river mouths.
+        </p>
+        <div class="container">
+          <div id="data">
+            <p class="data">Common Name: Pagi</p>
+            <p class="data">Scientific Name: <em>Dasyatis sp.</em></p>
+            <p class="data">Size: 50 cm - 150 cm</p>
+            <p class="data">Weight: 5 kgs - 15 kgs</p>
+            <p class="data">Season: Year-round peaking in June to Semptember</p>
+            <p class="data">Market Price(kg): PHP 100 - 200</p>
+          </div>
+          <div id="img"><img class="pic" src="../img2/pagi.jpg" alt="Pagi" /></div>
+        </div>
+        <div id="desc">
+          <p class="desc">
+            The Pagi can be found in coastal regions across the Philippines, particularly in the Visayas and Mindanao areas. It is commonly seen in shallow waters like bays, estuaries, and river mouths, where it feeds on benthic organisms.
+          </p>
+          <p class="desc">
+            In the Philippines, the Pagi is not only a significant part of the local marine ecosystem but also an important species in the fishing industry. Although not as widely consumed as other fish, it is sometimes sold in local markets and is
+            prized for its unique flavor and texture. The meat of the Pagi is used in various dishes, and its skin is sometimes utilized for leather production. The stingray is often caught using traditional fishing methods and is typically prepared
+            by grilling, frying, or stewing. Despite its venomous spines, which pose a risk to fishermen, the Pagi remains a valuable catch, especially in certain coastal communities where it is considered a delicacy.
+          </p>
+        </div>
+      </div>
+      <a class="jump" href="#">Jump to Top</a>
+    </div>
+    <div class="footer">
+      <div class="box-one">
+        <img class="footer-icon" src="../img2/blobfish.png" alt="A pixel art blobfish" />
+      </div>
+      <div class="box-two">
+        <p class="contact title">CONTACT US</p>
+        <p class="contact">isaiahmoureenmagallanes.balin22@deped-u.edu.ph</p>
+        <p class="contact">justinmiguelpalencia.osabal24@deped-u.edu.ph</p>
+        <p class="contact">johnbenedictbalbin.balilo24@deped-u.edu.ph</p>
+      </div>
+      <div class="box-three">
+        <p class="footer-text">This is a list for the most common fish served as food.</p>
+        <p class="footer-text">
+          Information from this
+          <a href="https://philfoodie.blogspot.com/2011/05/philippine-fish.html" target="_blank" rel="noopener noreferrer">lovely blog</a>
+          about fish.
+        </p>
+      </div>
+    </div>
+    <script src="autocomplete.js"></script>
   </body>
 </html>
