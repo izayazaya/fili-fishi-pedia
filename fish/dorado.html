@@ -3,12 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agoot</title>
+    <meta name="keywords" content="HTML, CSS, Fish, Fishes, Shellfish, Marine, Wikipedia, Philippines, Filipino" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dorado</title>
+    <script src="https://kit.fontawesome.com/af590c196f.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <a href="./../img2/agoot.jpg" download
-      ><img src="./../img2/agoot.jpg" alt="Agoot or Grunt"
-    /></a>
-    <a href="./../index.html">Home Page</a>
+    <div id="myHeader" class="header">
+      <img class="icon" src="../img2/blobfish.png" alt="A pixel art blobfish" />
+      <!-- The anchor elements here are used to redirect to different parts of the webpage -->
+      <div class="header-content">
+        <div class="section"><a href="..">Home</a></div>
+      </div>
+      <div class="search-bar">
+        <div class="navbar">
+          <input class="search" type="text" placeholder="Search..." name="search" autocomplete="off" />
+          <button id="submit-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="result-box"></div>
+      </div>
+    </div>
+    <div class="bg">
+      <h1>FILI-FISHI-PEDIA</h1>
+      <div class="box">
+        <h2 class="name">Dorado</h2>
+        <div class="container">
+          <div id="data">
+            <p class="data">Common Name: Dorado</p>
+            <p class="data">Scientific Name: <em>Coryphaena hippurus</em></p>
+            <p class="data">Size: 1.5 m - 2 m</p>
+            <p class="data">Weight: 10 kgs - 15 kgs</p>
+            <p class="data">Season: Year-round peaking in March - August</p>
+            <p class="data">Market Price(kg): PHP 700 - 750</p>
+          </div>
+          <div id="img"><img class="pic" src="../img2/dorado.jpg" alt="Dorado" /></div>
+        </div>
+        <div id="desc">
+          <p class="desc">
+            Dorado is found in tropical and subtropical waters of the Philippines, particularly in offshore areas and around coral reefs. It is often found in deep waters, though it can also be spotted near floating debris or seaweed mats, where it
+            hunts for smaller fish. Dorado is widely distributed in the Philippines, especially in regions like the Visayan Sea, Sulu Sea, and the waters surrounding Luzon.
+          </p>
+          <p class="desc">
+            Dorado (Coryphaena hippurus) is a commercially important fish in the Philippines, known for its vibrant color and fast growth. It is highly valued for its firm, white, and flavorful meat, making it a favorite for grilling, frying, and
+            sashimi. The fish’s popularity extends beyond local markets to international seafood exports, particularly in high-end restaurants. Dorado is commonly caught by commercial fishing boats using longlines and nets, and it can also be found
+            in fish markets, both fresh and frozen. It is often sold at a premium due to its rich flavor and the fact that it is considered a sportfish in many countries. Efforts are made to ensure sustainable fishing practices for dorado, given its
+            economic significance and demand in both local and global markets.
+          </p>
+        </div>
+      </div>
+      <a class="jump" href="#">Jump to Top</a>
+    </div>
+    <div class="footer">
+      <div class="box-one">
+        <img class="footer-icon" src="../img2/blobfish.png" alt="A pixel art blobfish" />
+      </div>
+      <div class="box-two">
+        <p class="contact title">CONTACT US</p>
+        <p class="contact">isaiahmoureenmagallanes.balin22@deped-u.edu.ph</p>
+        <p class="contact">justinmiguelpalencia.osabal24@deped-u.edu.ph</p>
+        <p class="contact">johnbenedictbalbin.balilo24@deped-u.edu.ph</p>
+      </div>
+      <div class="box-three">
+        <p class="footer-text">This is a list for the most common fish served as food.</p>
+        <p class="footer-text">
+          Information from this
+          <a href="https://philfoodie.blogspot.com/2011/05/philippine-fish.html" target="_blank" rel="noopener noreferrer">lovely blog</a>
+          about fish.
+        </p>
+      </div>
+    </div>
+    <script src="autocomplete.js"></script>
   </body>
 </html>

@@ -3,12 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agoot</title>
+    <meta name="keywords" content="HTML, CSS, Fish, Fishes, Shellfish, Marine, Wikipedia, Philippines, Filipino" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Espada</title>
+    <script src="https://kit.fontawesome.com/af590c196f.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <a href="./../img2/agoot.jpg" download
-      ><img src="./../img2/agoot.jpg" alt="Agoot or Grunt"
-    /></a>
-    <a href="./../index.html">Home Page</a>
+    <div id="myHeader" class="header">
+      <img class="icon" src="../img2/blobfish.png" alt="A pixel art blobfish" />
+      <!-- The anchor elements here are used to redirect to different parts of the webpage -->
+      <div class="header-content">
+        <div class="section"><a href="..">Home</a></div>
+      </div>
+      <div class="search-bar">
+        <div class="navbar">
+          <input class="search" type="text" placeholder="Search..." name="search" autocomplete="off" />
+          <button id="submit-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="result-box"></div>
+      </div>
+    </div>
+    <div class="bg">
+      <h1>FILI-FISHI-PEDIA</h1>
+      <div class="box">
+        <h2 class="name">Espada</h2>
+        <div class="container">
+          <div id="data">
+            <p class="data">Common Name: Espada</p>
+            <p class="data">Scientific Name: <em>Xiphias gladius</em></p>
+            <p class="data">Size: 3 m - 4 m</p>
+            <p class="data">Weight: 100 kgs - 200 kgs</p>
+            <p class="data">Season: Year-round peaking in March - August</p>
+            <p class="data">Market Price(kg): PHP 700 - 750</p>
+          </div>
+          <div id="img"><img class="pic" src="../img2/espada.jpg" alt="Espada" /></div>
+        </div>
+        <div id="desc">
+          <p class="desc">
+            Espada (swordfish) is found in the deep, open waters of the Philippines, particularly in the Pacific Ocean and around offshore islands. It is a migratory species and can be found in both temperate and tropical waters. Swordfish are
+            commonly spotted in the waters of the Visayan Sea, the Sulu Sea, and near the coasts of Luzon and Mindanao.
+          </p>
+          <p class="desc">
+            Espada (Xiphias gladius) is a highly prized commercial fish in the Philippines due to its large size, firm, meaty flesh, and excellent flavor. Swordfish is considered a luxury item and is often served in upscale restaurants, particularly
+            in grilled, steak-like portions. It is popular for its rich, slightly sweet taste and dense texture, making it ideal for grilling, searing, or baking. Swordfish is typically caught by large commercial fishing vessels using longlines or
+            harpoons, and its availability can fluctuate depending on migratory patterns. The fish is sold fresh, frozen, or as steaks in local markets, and there is also a significant demand for its export to international markets. Swordfish plays a
+            major role in the fishing economy of the Philippines, supporting both local markets and international seafood trade. Sustainable fishing practices are encouraged to ensure the long-term availability of this valuable species.
+          </p>
+        </div>
+      </div>
+      <a class="jump" href="#">Jump to Top</a>
+    </div>
+    <div class="footer">
+      <div class="box-one">
+        <img class="footer-icon" src="../img2/blobfish.png" alt="A pixel art blobfish" />
+      </div>
+      <div class="box-two">
+        <p class="contact title">CONTACT US</p>
+        <p class="contact">isaiahmoureenmagallanes.balin22@deped-u.edu.ph</p>
+        <p class="contact">justinmiguelpalencia.osabal24@deped-u.edu.ph</p>
+        <p class="contact">johnbenedictbalbin.balilo24@deped-u.edu.ph</p>
+      </div>
+      <div class="box-three">
+        <p class="footer-text">This is a list for the most common fish served as food.</p>
+        <p class="footer-text">
+          Information from this
+          <a href="https://philfoodie.blogspot.com/2011/05/philippine-fish.html" target="_blank" rel="noopener noreferrer">lovely blog</a>
+          about fish.
+        </p>
+      </div>
+    </div>
+    <script src="autocomplete.js"></script>
   </body>
 </html>
