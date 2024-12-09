@@ -3,12 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agoot</title>
+    <meta name="keywords" content="HTML, CSS, Fish, Fishes, Shellfish, Marine, Wikipedia, Philippines, Filipino" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sapsap</title>
+    <script src="https://kit.fontawesome.com/af590c196f.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <a href="./../img2/agoot.jpg" download
-      ><img src="./../img2/agoot.jpg" alt="Agoot or Grunt"
-    /></a>
-    <a href="./../index.html">Home Page</a>
+    <div id="myHeader" class="header">
+      <img class="icon" src="../img2/blobfish.png" alt="A pixel art blobfish" />
+      <!-- The anchor elements here are used to redirect to different parts of the webpage -->
+      <div class="header-content">
+        <div class="section"><a href="..">Home</a></div>
+      </div>
+      <div class="search-bar">
+        <div class="navbar">
+          <input class="search" type="text" placeholder="Search..." name="search" autocomplete="off" />
+          <button id="submit-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="result-box"></div>
+      </div>
+    </div>
+    <div class="bg">
+      <h1>FILI-FISHI-PEDIA</h1>
+      <div class="box">
+        <h2 class="name">Sapsap</h2>
+        <p class="desc">The Sapsap fish, found in the Philippines, is scientifically known as Leiognathus spp., commonly referred to as the Silver Striped Bigfin or Smallfin Ponyfish.</p>
+        <div class="container">
+          <div id="data">
+            <p class="data">Common Name: Sapsap</p>
+            <p class="data">Scientific Name: <em>Leiognathus spp.</em></p>
+            <p class="data">Size: 20 cm - 25 cm</p>
+            <p class="data">Weight: 0.1 kg - 0.2 kg</p>
+            <p class="data">Season: Year-round peaking in June - October</p>
+            <p class="data">Market Price(kg): PHP 100 - 200</p>
+          </div>
+          <div id="img"><img class="pic" src="../img2/sapsap.jpg" alt="Sapsap" /></div>
+        </div>
+        <div id="desc">
+          <p class="desc">
+            The Sapsap fish is found in the shallow, coastal waters of the Philippines, particularly in regions such as the Visayas, Mindanao, and parts of Luzon. It is commonly found in sandy or muddy bottoms, near coral reefs, estuaries, and other
+            coastal habitats.
+          </p>
+          <p class="desc">
+            Commercially, Sapsap is a popular fish in the Philippines due to its mild, slightly sweet taste and soft, tender flesh. It is commonly used in local dishes like sinigang (sour soup), paksiw (fish cooked in vinegar), or grilled. Sapsap is
+            often dried, salted, or smoked for preservation, especially in rural areas, making it a staple in many households. The fish is widely available in local markets, particularly in coastal regions, and is also an important part of the
+            small-scale fishing industry. Due to its affordability and versatile culinary uses, Sapsap remains a highly consumed fish in the Philippines, supporting both local consumption and small-scale fisheries. Although it is not as commercially
+            significant as some other species, Sapsap's role in the local seafood trade is crucial, contributing to the livelihood of many fishermen and fish vendors across the country.
+          </p>
+        </div>
+      </div>
+      <a class="jump" href="#">Jump to Top</a>
+    </div>
+    <div class="footer">
+      <div class="box-one">
+        <img class="footer-icon" src="../img2/blobfish.png" alt="A pixel art blobfish" />
+      </div>
+      <div class="box-two">
+        <p class="contact title">CONTACT US</p>
+        <p class="contact">isaiahmoureenmagallanes.balin22@deped-u.edu.ph</p>
+        <p class="contact">justinmiguelpalencia.osabal24@deped-u.edu.ph</p>
+        <p class="contact">johnbenedictbalbin.balilo24@deped-u.edu.ph</p>
+      </div>
+      <div class="box-three">
+        <p class="footer-text">This is a list for the most common fish served as food.</p>
+        <p class="footer-text">
+          Information from this
+          <a href="https://philfoodie.blogspot.com/2011/05/philippine-fish.html" target="_blank" rel="noopener noreferrer">lovely blog</a>
+          about fish.
+        </p>
+      </div>
+    </div>
+    <script src="autocomplete.js"></script>
   </body>
 </html>

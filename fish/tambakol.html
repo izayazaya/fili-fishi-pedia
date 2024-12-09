@@ -3,12 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agoot</title>
+    <meta name="keywords" content="HTML, CSS, Fish, Fishes, Shellfish, Marine, Wikipedia, Philippines, Filipino" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tambakol</title>
+    <script src="https://kit.fontawesome.com/af590c196f.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <a href="./../img2/agoot.jpg" download
-      ><img src="./../img2/agoot.jpg" alt="Agoot or Grunt"
-    /></a>
-    <a href="./../index.html">Home Page</a>
+    <div id="myHeader" class="header">
+      <img class="icon" src="../img2/blobfish.png" alt="A pixel art blobfish" />
+      <!-- The anchor elements here are used to redirect to different parts of the webpage -->
+      <div class="header-content">
+        <div class="section"><a href="..">Home</a></div>
+      </div>
+      <div class="search-bar">
+        <div class="navbar">
+          <input class="search" type="text" placeholder="Search..." name="search" autocomplete="off" />
+          <button id="submit-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="result-box"></div>
+      </div>
+    </div>
+    <div class="bg">
+      <h1>FILI-FISHI-PEDIA</h1>
+      <div class="box">
+        <h2 class="name">Tambakol</h2>
+        <p class="desc">The Tambakol fish, found in the Philippines, is scientifically known as Thunnus obesus, commonly referred to as the Bigeye Tuna.</p>
+        <div class="container">
+          <div id="data">
+            <p class="data">Common Name: Tambakol</p>
+            <p class="data">Scientific Name: <em>Thunnus obesus</em></p>
+            <p class="data">Size: 2 m - 3 m</p>
+            <p class="data">Weight: 50 kgs - 200 kgs</p>
+            <p class="data">Season: Year-round peaking in November - April</p>
+            <p class="data">Market Price(kg): PHP 100 - 200</p>
+          </div>
+          <div id="img"><img class="pic" src="../img2/tambakol.jpg" alt="Tambakol" /></div>
+        </div>
+        <div id="desc">
+          <p class="desc">
+            The Tambakol fish is found in the deep waters of the Philippines, especially in regions like the Sulu Sea, Bohol Sea, and along the western and eastern coasts of the country. It is commonly caught by commercial and artisanal fishermen
+            using longlines or purse seines.
+          </p>
+          <p class="desc">
+            Commercially, the Tambakol fish is highly prized for its firm, rich meat and is a key player in the Philippine tuna industry. It is widely consumed both locally and internationally, particularly in the form of sashimi, sushi, or canned
+            tuna. The fish is often exported to countries like Japan, the United States, and other parts of Southeast Asia, where it holds high market value. In the Philippines, Tambakol is also enjoyed fresh in dishes like sinigang (sour soup) or
+            grilled. The commercial tuna industry, particularly in Mindanao and other coastal regions, supports many fishermen and processing plants. Tambakol's export contributes significantly to the Philippine economy, making it one of the
+            country's most commercially valuable marine species. Due to its popularity and demand, sustainable fishing practices are increasingly emphasized to ensure the long-term viability of the fishery.
+          </p>
+        </div>
+      </div>
+      <a class="jump" href="#">Jump to Top</a>
+    </div>
+    <div class="footer">
+      <div class="box-one">
+        <img class="footer-icon" src="../img2/blobfish.png" alt="A pixel art blobfish" />
+      </div>
+      <div class="box-two">
+        <p class="contact title">CONTACT US</p>
+        <p class="contact">isaiahmoureenmagallanes.balin22@deped-u.edu.ph</p>
+        <p class="contact">justinmiguelpalencia.osabal24@deped-u.edu.ph</p>
+        <p class="contact">johnbenedictbalbin.balilo24@deped-u.edu.ph</p>
+      </div>
+      <div class="box-three">
+        <p class="footer-text">This is a list for the most common fish served as food.</p>
+        <p class="footer-text">
+          Information from this
+          <a href="https://philfoodie.blogspot.com/2011/05/philippine-fish.html" target="_blank" rel="noopener noreferrer">lovely blog</a>
+          about fish.
+        </p>
+      </div>
+    </div>
+    <script src="autocomplete.js"></script>
   </body>
 </html>

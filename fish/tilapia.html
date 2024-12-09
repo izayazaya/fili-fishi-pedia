@@ -3,12 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agoot</title>
+    <meta name="keywords" content="HTML, CSS, Fish, Fishes, Shellfish, Marine, Wikipedia, Philippines, Filipino" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tilapia</title>
+    <script src="https://kit.fontawesome.com/af590c196f.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <a href="./../img2/agoot.jpg" download
-      ><img src="./../img2/agoot.jpg" alt="Agoot or Grunt"
-    /></a>
-    <a href="./../index.html">Home Page</a>
+    <div id="myHeader" class="header">
+      <img class="icon" src="../img2/blobfish.png" alt="A pixel art blobfish" />
+      <!-- The anchor elements here are used to redirect to different parts of the webpage -->
+      <div class="header-content">
+        <div class="section"><a href="..">Home</a></div>
+      </div>
+      <div class="search-bar">
+        <div class="navbar">
+          <input class="search" type="text" placeholder="Search..." name="search" autocomplete="off" />
+          <button id="submit-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="result-box"></div>
+      </div>
+    </div>
+    <div class="bg">
+      <h1>FILI-FISHI-PEDIA</h1>
+      <div class="box">
+        <h2 class="name">Tilapia</h2>
+        <p class="desc">The Tilapia fish, found in the Philippines, is scientifically known as Oreochromis niloticus, commonly referred to as the Nile Tilapia.</p>
+        <div class="container">
+          <div id="data">
+            <p class="data">Common Name: Tilapia</p>
+            <p class="data">Scientific Name: <em>Oreochromis niloticus</em></p>
+            <p class="data">Size: 30 cm - 50 cm</p>
+            <p class="data">Weight: 0.5 kg - 2 kgs</p>
+            <p class="data">Season: Year-round peaking in March - June</p>
+            <p class="data">Market Price(kg): PHP 100 - 200</p>
+          </div>
+          <div id="img"><img class="pic" src="../img2/tilapia.jpg" alt="Tilapia" /></div>
+        </div>
+        <div id="desc">
+          <p class="desc">
+            The Tilapia fish is widely distributed across the Philippines, thriving in freshwater environments such as ponds, lakes, and rivers. It is commonly farmed in various provinces like Pangasinan, Batangas, and parts of Mindanao, where
+            aquaculture practices support its production.
+          </p>
+          <p class="desc">
+            Commercially, the Tilapia fish is one of the most important and widely consumed fish in the Philippines. It is valued for its mild taste, affordable price, and versatility in cooking. Tilapia is used in a variety of Filipino dishes such
+            as sinigang (sour soup), paksiw (fish cooked in vinegar), and grilled tilapia. It is commonly sold fresh, but is also available in processed forms such as frozen, filleted, or smoked. The fish is a staple in Filipino households due to its
+            accessibility and nutritional value. Tilapia farming has grown significantly in the Philippines, and the fish is exported to countries around the world, including the United States, Japan, and the Middle East. The industry provides income
+            for many farmers and fishermen, contributing to the local economy. Despite challenges like overfarming and environmental issues, tilapia remains a crucial part of the Philippine aquaculture sector.
+          </p>
+        </div>
+      </div>
+      <a class="jump" href="#">Jump to Top</a>
+    </div>
+    <div class="footer">
+      <div class="box-one">
+        <img class="footer-icon" src="../img2/blobfish.png" alt="A pixel art blobfish" />
+      </div>
+      <div class="box-two">
+        <p class="contact title">CONTACT US</p>
+        <p class="contact">isaiahmoureenmagallanes.balin22@deped-u.edu.ph</p>
+        <p class="contact">justinmiguelpalencia.osabal24@deped-u.edu.ph</p>
+        <p class="contact">johnbenedictbalbin.balilo24@deped-u.edu.ph</p>
+      </div>
+      <div class="box-three">
+        <p class="footer-text">This is a list for the most common fish served as food.</p>
+        <p class="footer-text">
+          Information from this
+          <a href="https://philfoodie.blogspot.com/2011/05/philippine-fish.html" target="_blank" rel="noopener noreferrer">lovely blog</a>
+          about fish.
+        </p>
+      </div>
+    </div>
+    <script src="autocomplete.js"></script>
   </body>
 </html>
