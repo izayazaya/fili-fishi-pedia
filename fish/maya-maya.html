@@ -3,12 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agoot</title>
+    <meta name="keywords" content="HTML, CSS, Fish, Fishes, Shellfish, Marine, Wikipedia, Philippines, Filipino" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Maya-maya</title>
+    <script src="https://kit.fontawesome.com/af590c196f.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <a href="./../img2/agoot.jpg" download
-      ><img src="./../img2/agoot.jpg" alt="Agoot or Grunt"
-    /></a>
-    <a href="./../index.html">Home Page</a>
+    <div id="myHeader" class="header">
+      <img class="icon" src="../img2/blobfish.png" alt="A pixel art blobfish" />
+      <!-- The anchor elements here are used to redirect to different parts of the webpage -->
+      <div class="header-content">
+        <div class="section"><a href="..">Home</a></div>
+      </div>
+      <div class="search-bar">
+        <div class="navbar">
+          <input class="search" type="text" placeholder="Search..." name="search" autocomplete="off" />
+          <button id="submit-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="result-box"></div>
+      </div>
+    </div>
+    <div class="bg">
+      <h1>FILI-FISHI-PEDIA</h1>
+      <div class="box">
+        <h2 class="name">Maya-maya</h2>
+        <p class="desc">The Maya-maya fish, found in the Philippines, is scientifically known as Lutjanus campechanus, commonly referred to as the Red Snapper.</p>
+        <div class="container">
+          <div id="data">
+            <p class="data">Common Name: Maya-maya</p>
+            <p class="data">Scientific Name: <em>Lutjanus campechanus</em></p>
+            <p class="data">Size: 0.7 m - 1 m</p>
+            <p class="data">Weight: 5 kgs - 10 kgs</p>
+            <p class="data">Season: Year-round peaking in November - April</p>
+            <p class="data">Market Price(kg): PHP 100 - 200</p>
+          </div>
+          <div id="img"><img class="pic" src="../img2/maya-maya.jpg" alt="Maya-maya" /></div>
+        </div>
+        <div id="desc">
+          <p class="desc">
+            The Maya-maya fish is found in the tropical and subtropical waters of the Philippines, particularly in the Visayas, Mindanao, and around the coastal areas of Luzon. It thrives in both shallow and deep waters, often near coral reefs,
+            drop-offs, and rocky outcrops.
+          </p>
+          <p class="desc">
+            Commercially, Maya-maya is a highly prized fish due to its firm, white, and flavorful meat. It is one of the most sought-after fish in the Philippines, often used in a wide range of Filipino dishes such as sinigang (sour soup), grilled
+            preparations, or kinilaw (raw fish salad). Maya-maya is available fresh in local markets, and its meat is also in demand for export, particularly to countries with high seafood consumption. Its rich flavor and versatility in cooking make
+            it popular both locally and internationally. Due to its high market value, it supports both local and commercial fisheries, contributing significantly to the Philippine seafood industry. With its robust demand, the fish plays an important
+            economic role in the coastal communities where it is caught.
+          </p>
+        </div>
+      </div>
+      <a class="jump" href="#">Jump to Top</a>
+    </div>
+    <div class="footer">
+      <div class="box-one">
+        <img class="footer-icon" src="../img2/blobfish.png" alt="A pixel art blobfish" />
+      </div>
+      <div class="box-two">
+        <p class="contact title">CONTACT US</p>
+        <p class="contact">isaiahmoureenmagallanes.balin22@deped-u.edu.ph</p>
+        <p class="contact">justinmiguelpalencia.osabal24@deped-u.edu.ph</p>
+        <p class="contact">johnbenedictbalbin.balilo24@deped-u.edu.ph</p>
+      </div>
+      <div class="box-three">
+        <p class="footer-text">This is a list for the most common fish served as food.</p>
+        <p class="footer-text">
+          Information from this
+          <a href="https://philfoodie.blogspot.com/2011/05/philippine-fish.html" target="_blank" rel="noopener noreferrer">lovely blog</a>
+          about fish.
+        </p>
+      </div>
+    </div>
+    <script src="autocomplete.js"></script>
   </body>
 </html>
