@@ -3,12 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agoot</title>
+    <meta name="keywords" content="HTML, CSS, Fish, Fishes, Shellfish, Marine, Wikipedia, Philippines, Filipino" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Torsilyo</title>
+    <script src="https://kit.fontawesome.com/af590c196f.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <a href="./../img2/agoot.jpg" download
-      ><img src="./../img2/agoot.jpg" alt="Agoot or Grunt"
-    /></a>
-    <a href="./../index.html">Home Page</a>
+    <div id="myHeader" class="header">
+      <img class="icon" src="../img2/blobfish.png" alt="A pixel art blobfish" />
+      <!-- The anchor elements here are used to redirect to different parts of the webpage -->
+      <div class="header-content">
+        <div class="section"><a href="..">Home</a></div>
+      </div>
+      <div class="search-bar">
+        <div class="navbar">
+          <input class="search" type="text" placeholder="Search..." name="search" autocomplete="off" />
+          <button id="submit-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="result-box"></div>
+      </div>
+    </div>
+    <div class="bg">
+      <h1>FILI-FISHI-PEDIA</h1>
+      <div class="box">
+        <h2 class="name">Torsilyo</h2>
+        <p class="desc">The Torsilyo fish, found in the Philippines, is scientifically known as Sardinella gibbosa, commonly referred to as the Shortfin Sardine.</p>
+        <div class="container">
+          <div id="data">
+            <p class="data">Common Name: Torsilyo</p>
+            <p class="data">Scientific Name: <em>Sardinella gibbosa</em></p>
+            <p class="data">Size: 15 cm - 18 cm</p>
+            <p class="data">Weight: 0.02 kg - 0.04 kg</p>
+            <p class="data">Season: Year-round peaking in June - September</p>
+            <p class="data">Market Price(kg): PHP 100 - 200</p>
+          </div>
+          <div id="img"><img class="pic" src="../img2/torsilyo.jpg" alt="Torsilyo" /></div>
+        </div>
+        <div id="desc">
+          <p class="desc">
+            The Torsilyo fish is found in coastal waters across the Philippines, particularly in the Visayas, Mindanao, and Luzon. It thrives in warm, tropical waters and is commonly found in schools near the surface of bays and estuaries.
+          </p>
+          <p class="desc">
+            Commercially, the Torsilyo fish is widely consumed due to its abundance and low cost. It is typically used in local Filipino dishes such as sardinas (sardines in tomato sauce), sinigang (sour soup), and paksiw (fish cooked in vinegar).
+            Torsilyo is also preserved through drying, salting, or smoking, and dried Torsilyo is often used as a snack or served with rice as a simple meal. This small fish is a significant part of the local diet and is particularly popular in
+            coastal communities where it is readily available. Its affordability and nutritional value make it a staple in many Filipino households. The Torsilyo fish also plays an important role in the Philippine fishing industry, both for local
+            consumption and for export to nearby countries. Sustainable fishing practices are essential to maintain the healthy population of this species in the wild, as overfishing can deplete their numbers.
+          </p>
+        </div>
+      </div>
+      <a class="jump" href="#">Jump to Top</a>
+    </div>
+    <div class="footer">
+      <div class="box-one">
+        <img class="footer-icon" src="../img2/blobfish.png" alt="A pixel art blobfish" />
+      </div>
+      <div class="box-two">
+        <p class="contact title">CONTACT US</p>
+        <p class="contact">isaiahmoureenmagallanes.balin22@deped-u.edu.ph</p>
+        <p class="contact">justinmiguelpalencia.osabal24@deped-u.edu.ph</p>
+        <p class="contact">johnbenedictbalbin.balilo24@deped-u.edu.ph</p>
+      </div>
+      <div class="box-three">
+        <p class="footer-text">This is a list for the most common fish served as food.</p>
+        <p class="footer-text">
+          Information from this
+          <a href="https://philfoodie.blogspot.com/2011/05/philippine-fish.html" target="_blank" rel="noopener noreferrer">lovely blog</a>
+          about fish.
+        </p>
+      </div>
+    </div>
+    <script src="autocomplete.js"></script>
   </body>
 </html>
